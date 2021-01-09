@@ -96,37 +96,68 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  background-color: #632137;
+  color: #c9d1ed;
 }
 
-body {
+.content-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper nav {
+  border: #21635e 5px solid;
+  border-style: outset;
+  border-radius: 15px;
+  background-color: #21635e;
+  padding: 10px;
 }
 
 header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 5px;
 }
 
-nav {
+nav a {
+  color: #d68591;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: hotpink;
+}
+
+.content-wrapper h1 {
+  text-align: center;
+  width: 80%;
+}
+
+#hero-image {
+  text-align: center;
+}
+
+#hero-image img {
+  border: 5px solid #d68591;
+}
+
+#about .content-wrapper {
+  flex-direction: column;
+}
+
+#about h3,
+#about h5,
+#about p {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px 10px 15px 10px;
-  width: 70%;
-}
-
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  max-width: 80%;
+  padding: 5px;
+  border: #21635e 5px solid;
+  border-style: outset;
+  border-radius: 15px;
+  background-color: #21635e;
 }
 
 /*END OF AUTHOR'S CUSTOM STYLES*/
