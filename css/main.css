@@ -160,6 +160,19 @@ nav a:hover {
   background-color: #21635e;
 }
 
+/*Photo Library*/
+
+.photo-library {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-library a {
+  width: 20%;
+  height: 20%;
+  margin: 5px;
+}
+
 /*END OF AUTHOR'S CUSTOM STYLES*/
 
 /* ==========================================================================
