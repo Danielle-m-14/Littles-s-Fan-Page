@@ -125,7 +125,7 @@ nav a {
 }
 
 nav a:hover {
-  color: hotpink;
+  color: #ff69b4;
 }
 
 .content-wrapper h1 {
@@ -160,16 +160,45 @@ nav a:hover {
   background-color: #21635e;
 }
 
-/*Photo Library*/
+/*Photo Page*/
 
 .photo-library {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.photo-library a {
+.photo-library img {
   width: 20%;
-  height: 20%;
+  margin: 2px;
+  object-fit: scale-down;
+  border: black solid 3px;
+  background-color: #000;
+}
+
+/*Places Page*/
+
+.map-key-wrapper {
+  margin: 5px;
+  border: solid 3px #21635e;
+  background-color: #21635e;
+  padding: 5px;
+  width: 20%;
+}
+
+#visited-color {
+  background-color: #d68591;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+#not-visited-color {
+  background-color: #632137;
+  height: 20px;
+  width: 20px;
   margin: 5px;
 }
 
