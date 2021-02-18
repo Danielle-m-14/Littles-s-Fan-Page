@@ -13,9 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 25px;
   line-height: 1.4;
-  font-family: "Grand Hotel", cursive;
+  font-family: "Truculenta", sans-serif;
 }
 
 /*
@@ -133,8 +133,21 @@ nav a:hover {
   width: 80%;
 }
 
+/*"Littles" on homepage*/
+h1 span {
+  text-shadow: #222 3px 3px;
+  border-top: #c9d1ed solid 3px;
+  font-size: 50px;
+}
+
+#main-title h1 {
+  width: 40%;
+  border-bottom: #c9d1ed solid 3px;
+}
+
 #hero-image {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #hero-image img {
