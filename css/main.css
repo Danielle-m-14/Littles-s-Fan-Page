@@ -87,6 +87,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* eventaully change colors to ... https://color.hailpixel.com/#2EE7FF,F5E900,FFB3FA,FFFAF5  */
 
 /**BASE STYLES**/
 
@@ -96,8 +97,8 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #632137;
-  color: #c9d1ed;
+  background-color: #ffb3fa;
+  color: #430052;
 }
 
 .content-wrapper {
@@ -107,10 +108,10 @@ body {
 }
 
 .content-wrapper nav {
-  border: #21635e 5px solid;
+  border: #2ee7ff 5px solid;
   border-style: outset;
   border-radius: 15px;
-  background-color: #21635e;
+  background-color: #f5e900;
   padding: 10px;
 }
 
@@ -119,7 +120,7 @@ header {
 }
 
 nav a {
-  color: #d68591;
+  color: black;
   text-decoration: none;
   padding: 10px;
 }
@@ -135,14 +136,14 @@ nav a:hover {
 
 /*"Littles" on homepage*/
 h1 span {
-  text-shadow: #222 3px 3px;
-  border-top: #c9d1ed solid 3px;
+  text-shadow: #fffaf5 3px 3px;
+  border-top: #fffaf5 solid 3px;
   font-size: 50px;
 }
 
 #main-title h1 {
   width: 40%;
-  border-bottom: #c9d1ed solid 3px;
+  border-bottom: #fffaf5 solid 3px;
 }
 
 #hero-image {
@@ -151,11 +152,15 @@ h1 span {
 }
 
 #hero-image img {
-  border: 5px solid #d68591;
+  border: 5px solid #2ee7ff;
 }
 
 #about .content-wrapper {
   flex-direction: column;
+}
+
+#about h2 {
+  text-shadow: #fffaf5 2px 2px;
 }
 
 #about h3,
@@ -170,10 +175,49 @@ h1 span {
   border: #d68591 5px solid;
   border-style: outset;
   border-radius: 15px;
-  background-color: #21635e;
+  background-color: #fffaf5;
 }
 
-/*Photo Page*/
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5e900;
+  border-top: #2ee7ff solid 4px;
+}
+
+footer h5 {
+  font-size: 25px;
+  margin-top: 2%;
+}
+
+footer a {
+  font-size: 50px;
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 4%;
+}
+
+/* Photo Page */
 
 .photo-library {
   width: 100%;
