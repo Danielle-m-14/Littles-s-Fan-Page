@@ -120,13 +120,15 @@ header {
 }
 
 nav a {
-  color: black;
+  color: #fffaf5;
+  text-shadow: #ff69b4 2px 2px;
   text-decoration: none;
   padding: 10px;
 }
 
 nav a:hover {
   color: #ff69b4;
+  text-shadow: none;
 }
 
 .content-wrapper h1 {
@@ -186,6 +188,7 @@ footer {
   flex-direction: column;
   background-color: #f5e900;
   border-top: #2ee7ff solid 4px;
+  width: 100%;
 }
 
 footer h5 {
@@ -193,6 +196,7 @@ footer h5 {
   margin-top: 2%;
 }
 
+/* Instagram color styling */
 footer a {
   font-size: 50px;
   color: transparent;
@@ -239,8 +243,8 @@ footer a {
 
 .map-key-wrapper {
   margin: 10px;
-  border: solid 3px #21635e;
-  background-color: #21635e;
+  border: solid 3px #f5e900;
+  background-color: white;
   padding: 15px;
   width: 15%;
 }
@@ -252,7 +256,7 @@ footer a {
 }
 
 #visited-color {
-  background-color: #d68591;
+  background-color: #f5e900;
   height: 50px;
   width: 50px;
   margin: 10px;
@@ -265,7 +269,7 @@ footer a {
 }
 
 #not-visited-color {
-  background-color: #632137;
+  background-color: #430052;
   height: 50px;
   width: 50px;
   margin: 10px;

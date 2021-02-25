@@ -21,6 +21,8 @@
 
     <meta name="theme-color" content="#fafafa">
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -57,119 +59,126 @@
 </div>
 
 
-    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-    <script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js" type="text/javascript"></script>
-    <script src="https://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>
+
+   <!-- <div id="mapdiv" style="width: 100%; height: 100%; text-align: center"></div>
+    <div style="width: 80%; font-size: 70%; padding: 5px 0; text-align: center; background-color: #2ee7ff; 
+    margin-top: 1px; color: #430052;">
+        </div>  -->
+
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>
+
+<div id="mapdiv" style="width: 100%; height: 100%; text-align: center"></div>
+<div style="width: 80%; font-size: 70%; padding: 5px 0; text-align: center; background-color: #2ee7ff; 
+    margin-top: 1px; color: #430052;">
+
+<script type="text/javascript">
+    var map = AmCharts.makeChart("mapdiv", {
+        type: "map",
+        theme: "light",
+        panEventsEnabled: true,
+        backgroundColor: "#2EE7FF",
+        backgroundAlpha: 0,
+        zoomControl: {
+            zoomControlEnabled: false
+        },
+        dataProvider: {
+            map: "usaHigh",
+            getAreasFromMap: true,
+            areas:
+                [
+                    {
+                        "id": "US-AR",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-AZ",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-CA",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-CO",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-IA",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-IL",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-IN",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-MD",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-NE",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-NM",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-NV",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-OH",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-PA",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-TN",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-TX",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-UT",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-VA",
+                        "showAsSelected": true
+                    },
+                    {
+                        "id": "US-WV",
+                        "showAsSelected": true
+                    }
+                ]
+        },
+        areasSettings: {
+            autoZoom: true,
+            color: "#430052",
+            colorSolid: "#F5E900",
+            selectedColor: "#F5E900",
+            outlineColor: "#2ee7ff",
+            rollOverColor: "#FFB3FA",
+            rollOverOutlineColor: "#2ee7ff"
+        }
+    });
+</script>
 
 
-    <div id="mapdiv" style="width: 100%; height: 100%; text-align: center"></div>
-    <div style="width: 80%; font-size: 70%; padding: 5px 0; text-align: center; background-color: #21635e; 
-    margin-top: 1px; color: #632137;">
-        </div>
-    <script type="text/javascript">
-        var map = AmCharts.makeChart("mapdiv", {
-            type: "map",
-            theme: "light",
-            panEventsEnabled: true,
-            backgroundColor: "#21635e",
-            backgroundAlpha: 1,
-            zoomControl: {
-                zoomControlEnabled: true
-            },
-            dataProvider: {
-                map: "usaHigh",
-                getAreasFromMap: true,
-                areas:
-                    [
-                        {
-                            "id": "US-AR",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-AZ",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-CA",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-CO",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-IA",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-IL",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-IN",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-MD",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-NE",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-NM",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-NV",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-OH",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-OK",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-PA",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-TN",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-TX",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-UT",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-VA",
-                            "showAsSelected": true
-                        },
-                        {
-                            "id": "US-WV",
-                            "showAsSelected": true
-                        }
-                    ]
-            },
-            areasSettings: {
-                autoZoom: false,
-                color: "#632137",
-                colorSolid: "#d68591",
-                selectedColor: "#d68591",
-                outlineColor: "#632137",
-                rollOverColor: "#ff69b4",
-                rollOverOutlineColor: "#d68591"
-            }
-        });
-    </script>
+<footer>
+    <h5>Check out my social media!</h5>
+    <a href="https://www.instagram.com/littlesmatalonis/?hl=de" target="_blank"><i class="fab fa-instagram"></i></a>
+</footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
