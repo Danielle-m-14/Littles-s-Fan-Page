@@ -122,10 +122,11 @@ header {
 }
 
 nav a {
+  font-size: 2rem;
   color: #fffaf5;
-  text-shadow: #ff69b4 2px 2px;
+  text-shadow: #ff69b4 0.125rem 0.125rem;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 nav a:hover {
@@ -140,23 +141,23 @@ nav a:hover {
 
 /*"Littles" on homepage*/
 h1 span {
-  text-shadow: #fffaf5 3px 3px;
-  border-top: #fffaf5 solid 3px;
-  font-size: 50px;
+  text-shadow: #fffaf5 0.1875rem 0.1875rem;
+  border-top: #fffaf5 solid 0.1875rem;
+  font-size: 3.125rem;
 }
 
 #main-title h1 {
   width: 40%;
-  border-bottom: #fffaf5 solid 3px;
+  border-bottom: #fffaf5 solid 0.1875rem;
 }
 
 #hero-image {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 #hero-image img {
-  border: 5px solid #2ee7ff;
+  border: 0.3125rem solid #2ee7ff;
   border-style: outset;
   width: 80%;
   height: auto;
@@ -167,7 +168,7 @@ h1 span {
 }
 
 #about h2 {
-  text-shadow: #fffaf5 2px 2px;
+  text-shadow: #fffaf5 0.125rem 0.125rem;
 }
 
 #about h3,
@@ -178,11 +179,12 @@ h1 span {
   align-items: center;
   flex-direction: column;
   max-width: 80%;
-  padding: 5px;
-  border: #d68591 5px solid;
+  padding: 0.4rem;
+  border: #d68591 0.3125rem solid;
   border-style: outset;
   border-radius: 15px;
   background-color: #fffaf5;
+  text-align: center;
 }
 
 /* Footer */
@@ -192,18 +194,18 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: #f5e900;
-  border-top: #2ee7ff solid 4px;
+  border-top: #2ee7ff solid 0.25rem;
   width: 100%;
 }
 
 footer h5 {
-  font-size: 25px;
+  font-size: 1.6rem;
   margin-top: 2%;
 }
 
 /* Instagram icon color styling */
 footer a {
-  font-size: 50px;
+  font-size: 3.13rem;
   color: transparent;
   background: radial-gradient(
     circle at 30% 107%,
@@ -238,19 +240,19 @@ footer a {
 
 .photo-library img {
   width: 20%;
-  margin: 2px;
+  margin: 0.125rem;
   object-fit: scale-down;
-  border: black solid 3px;
+  border: black solid 0.188rem;
   background-color: #000;
 }
 
 /*Places Page*/
 
 .map-key-wrapper {
-  margin: 10px;
-  border: solid 3px #f5e900;
+  margin: 0.625rem;
+  border: solid 0.1875rem #f5e900;
   background-color: white;
-  padding: 15px;
+  padding: 1rem;
   width: auto;
 }
 
@@ -266,9 +268,9 @@ footer a {
 
 #visited-color {
   background-color: #f5e900;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+  height: 3.125rem;
+  width: 3.125rem;
+  margin: 0.625rem;
 }
 
 #not-visited {
@@ -279,17 +281,17 @@ footer a {
 
 #not-visited-color {
   background-color: #430052;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+  height: 3.125rem;
+  width: 3.125rem;
+  margin: 0.625rem;
 }
 
 /* Map */
 #mapdiv {
-  width: auto;
   height: 65%;
+  width: auto;
   text-align: center;
-  margin: 15px;
+  margin: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -386,10 +388,16 @@ footer a {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
+  html {
+    font-size: 22px;
+  }
 } /* don't delete */
 
 @media only screen and (min-width: 1150px) {
   /*Desktop styles here*/
+  html {
+    font-size: 28px;
+  }
 } /* don't delete */
 
 /* ==========================================================================
