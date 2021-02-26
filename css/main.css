@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 25px;
+  font-size: 16px;
   line-height: 1.4;
   font-family: "Truculenta", sans-serif;
 }
@@ -94,9 +94,9 @@ textarea {
 html,
 body {
   width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+  height: auto;
+  margin: 0;
+  padding: 0;
   background-color: #ffb3fa;
   color: #430052;
 }
@@ -108,15 +108,17 @@ body {
 }
 
 .content-wrapper nav {
-  border: #2ee7ff 5px solid;
+  border: #2ee7ff 0.3rem solid;
   border-style: outset;
   border-radius: 15px;
   background-color: #f5e900;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 header {
-  margin: 5px;
+  margin: 0.3rem;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
@@ -155,6 +157,9 @@ h1 span {
 
 #hero-image img {
   border: 5px solid #2ee7ff;
+  border-style: outset;
+  width: 80%;
+  height: auto;
 }
 
 #about .content-wrapper {
@@ -196,7 +201,7 @@ footer h5 {
   margin-top: 2%;
 }
 
-/* Instagram color styling */
+/* Instagram icon color styling */
 footer a {
   font-size: 50px;
   color: transparent;
@@ -246,7 +251,11 @@ footer a {
   border: solid 3px #f5e900;
   background-color: white;
   padding: 15px;
-  width: 15%;
+  width: auto;
+}
+
+.map-key-wrapper h3 {
+  text-align: center;
 }
 
 #visited {
@@ -273,6 +282,16 @@ footer a {
   height: 50px;
   width: 50px;
   margin: 10px;
+}
+
+/* Map */
+#mapdiv {
+  width: auto;
+  height: 65%;
+  text-align: center;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 /*END OF AUTHOR'S CUSTOM STYLES*/
