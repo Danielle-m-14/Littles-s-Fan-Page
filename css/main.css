@@ -253,7 +253,7 @@ footer a {
   border: solid 0.1875rem #f5e900;
   background-color: white;
   padding: 1rem;
-  width: auto;
+  width: 30%;
 }
 
 .map-key-wrapper h3 {
@@ -289,7 +289,7 @@ footer a {
 /* Map */
 #mapdiv {
   height: 80%;
-  min-height: 12.5rem;
+  min-height: 15.5rem;
   width: auto;
   text-align: center;
   margin: 1rem;
@@ -390,12 +390,42 @@ footer a {
   html {
     font-size: 22px;
   }
+
+  .map-key-wrapper {
+    width: 30%;
+  }
+
+  #mapdiv {
+    height: 80%;
+    min-height: 19rem;
+  }
 } /* don't delete */
 
 @media only screen and (min-width: 1150px) {
   /*Desktop styles here*/
   html {
-    font-size: 28px;
+    font-size: 25px;
+  }
+
+  #hero-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #hero-image img {
+    width: 20%;
+    height: auto;
+  }
+
+  .map-key-wrapper {
+    width: 20%;
+  }
+
+  #mapdiv {
+    height: 80%;
+    min-height: 22rem;
   }
 } /* don't delete */
 
